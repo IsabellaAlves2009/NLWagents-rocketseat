@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>NLWagents</title>
+</head>
+<body>
+    <header>
+        <img src="/assets/nlw.png" id="iconSports">
+    </header>
+    <main>
+        <section>
+            <div>
+                <h2>Assistente de Meta</h2>
+                <p>Pergunte sobre estratégias, build e dicas para seus jogos!</p>
+                <form id="form" action="">
+                    <input type="password" id="apiKey" name="" id="" placeholder="Informe a API KEY do Gemini">
+                    <select name="" id="game-select">
+                        <option value="">Selecione um jogo</option>
+                        <option value="valorant">Valorant</option>
+                        <option value="lol">League of Legends</option>
+                        <option value="csgo">CS:GO</option>
+                    </select>
+                    <input type="text"  name="" id="question-input" placeholder="Ex: Melhor build para ADC...">
+                    <button id="ask-button">Perguntar</button>
+                </form>
+                <div id="aiResponse" class="hidden">
+                    <div class="response-content">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="main.js"></script>
+    <script src=" https://unpkg.com/showdown/dist/showdown.min.js"></script>
+</body>
+</html>

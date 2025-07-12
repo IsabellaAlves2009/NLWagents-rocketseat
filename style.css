@@ -1,0 +1,131 @@
+*, :root{
+    font-family: 'Inter', sans-serif;
+    line-height: 160%;
+}
+
+body {
+    background-image: url(/assets/bg.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-color: #121214;
+    color: #fff;
+}
+
+header {
+    text-align: center;
+    padding-top: 32px;
+}
+
+#iconSports{
+    width: 15em;
+}
+
+main {
+    max-width: 36rem;
+    width: 90%;
+    margin: 3rem auto;
+}
+
+section {
+    background-image: linear-gradient(90deg, #9572fc 0%, #43e7ad 50%, #e2d45c 100%);
+    border-radius: 0.625rem;
+    padding-top: 4px;
+    opacity: 0;
+    transform: translateY(2rem);
+    animation: appear 700ms forwards;
+}
+
+section p {
+    color: #1a1a1a;
+}
+
+section > div {
+    padding: 2rem;
+    padding-top: 1.5rem;
+    border-radius: 0.5rem;
+    background-color: #2a2634;
+}
+
+form{
+    display: flex;
+    gap: 0.85rem;
+    flex-wrap: wrap;
+    margin: 1.25rem 0;
+}
+
+input, select{
+    all: unset;
+    border: 2px solid  #9147ff;
+    border-radius: 0.5rem;
+    padding: 0.675rem;
+    font-size: 0.875rem;
+    background-color: #000;
+}
+
+input{
+    flex: 1;
+}
+
+#aiResponse {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    border-left: 4px solid #43e7ad;
+}
+
+#aiResponse ul{
+    padding: 1.5rem;
+}
+
+#aiResponse p {
+    color: #fff;
+}
+
+.hidden{
+    display: none;
+}
+
+button{
+    width: 100%;
+    border: 0;
+    background-image: linear-gradient(90deg, #9572fc 0%, #43e7ad 50%, #e2d45c 100%);
+    padding: 0.675rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.12px;
+    transition: all 0.3s;
+}
+
+button:hover{
+    cursor: pointer;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 1rem rgba(255, 248, 107, 0.2);
+}
+
+button:disabled{
+    transition: initial;
+    transform: initial;
+    box-shadow: initial;
+    cursor: not-allowed;
+    color: #000;
+}
+
+.loading{
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+   50%{
+    opacity: 0.5;
+   }
+    
+}
+
+@keyframes appear {
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
